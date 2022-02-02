@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-title>Nova Colaboração</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="ID imagem" [(ngModel)]="imagem._id" name="_id" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="imagem.nomeImagem" name="nomeImagem" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Texto" [(ngModel)]="imagem.texto" name="texto" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Figura" [(ngModel)]="imagem.figura" name="figura" disabled>
+        </mat-form-field>
+
+        
+    </form>
+
+
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(ngModel)]="colaboracao.descricao" name="descricao">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Áudio" [(ngModel)]="colaboracao.audio" name="audio">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Id da imagem" [(ngModel)]="colaboracao.imagem_idImagem" name="imagem_idImagem">
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <input matInput placeholder="ID autor" [(ngModel)]="colaboracao.professor_idProfessor" name="professor_idProfessor">
+        </mat-form-field>
+
+
+
+    </form>
+    <button mat-raised-button (click)="criarColaboracao()" color="primary">
+        Criar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,0 +1,46 @@
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+    .home .subtitle {
+    font-size: 1.1rem;
+}
+
+
+  mat-card.home {
+      width: 90%;
+      margin: 15px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+
+    mat-card.relative-parent.title {
+        width: 600px;
+        margin: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+      }
+
+     
+      table {
+        width: 100%;
+    }
+        .edit {
+        margin-right: 10px;
+    }
+        .edit > i {
+        color: #3826d9;
+    }
+        .delete > i {
+        color: #fc2e42;
+    }
+    router-outlet *{
+        display: block;
+
+        margin-left: 100px;
+    }
+  
